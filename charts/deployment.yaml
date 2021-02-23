@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: request-service
+  labels:
+    app: request-service
+    version: v1
+  namespace: apps
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: request-service
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: request-service
+        version: v1
+    spec:
+      containers:
+      - name: request-service
+        image: gcr.io/acn-agbg-assets/request-service
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080

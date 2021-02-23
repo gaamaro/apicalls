@@ -1,0 +1,10 @@
+autodynatrace==1.0.73
+autowrapt==1.0
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+oneagent-sdk==1.4.0.20210127.165413
+requests==2.25.1
+six==1.15.0
+urllib3==1.26.3
+wrapt==1.12.1
